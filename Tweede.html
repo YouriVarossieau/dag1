@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <H1>Rekenwonder</H1>
+    <input type="number" id="getal1">
+    <input type="number" id="getal2">
+    
+    <button type="button" onclick="plus()">
+        +
+    </button>
+
+    <button type="button" onclick="min()">
+        -
+    </button>
+
+    <button type="button" onclick="keer()">
+        *
+    </button>
+    
+    <button type="button" onclick="delen()">
+        /
+    </button>
+    
+    <script>
+        // Scope
+            let getal1 = document.getElementById('getal1') 
+            let getal2 = document.getElementById('getal2')
+        
+        function plus() {
+
+            let getal1Waarde = Number.parseInt (getal1.value)
+            let getal2Waarde = Number.parseInt (getal2.value)
+            
+            alert(getal1Waarde + getal2Waarde) ;
+        }
+        function min() {
+
+            let getal1Waarde = Number.parseInt (getal1.value)
+            let getal2Waarde = Number.parseInt (getal2.value)
+            
+            alert(getal1Waarde - getal2Waarde) ;
+        }
+        function keer() {
+            
+            let getal1Waarde = Number.parseInt (getal1.value)
+            let getal2Waarde = Number.parseInt (getal2.value)
+            
+            alert(getal1Waarde * getal2Waarde) ;
+        }
+        function delen() {
+
+            let getal1Waarde = Number.parseInt (getal1.value)
+            let getal2Waarde = Number.parseInt (getal2.value)
+            
+            alert(getal1Waarde / getal2Waarde) ;
+        }
+    
+
+    </script>
+</body>
+</html>
